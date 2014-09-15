@@ -8,33 +8,28 @@
 
 #import "AIListTableViewCell.h"
 
-static CGFloat margin = 15;
+static NSString * const titleKey = @"title";
 
 @interface AIListTableViewCell ()
 
-@property (nonatomic, strong) UITextField *titleField;
+@property (nonatomic, strong) IBOutlet UITextField *titleField;
 
 @end
 
 @implementation AIListTableViewCell
 
+- (void)awakeFromNib {
+    // This method gets called
+
+}
+
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    if (self) {
-        
-        UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(margin, 0, self.contentView.bounds.size.width - (3 * margin), self.contentView.bounds.size.height)];
-        textField.placeholder = @"Idea Name";
-        self.titleField = textField;
-        [self.contentView addSubview:textField];
-        
-        self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        
-    }
+    self = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:self options:nil] objectAtIndex:0];
     return self;
 }
 
-- (void)updateWithIdea:(NSString *)idea {
-    self.titleField.text = idea;
+- (void)updateWithIdea:(NSDictionary *)idea {
+    self.titleField.text = idea[titleKey];
 }
 
 @end
