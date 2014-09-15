@@ -22,6 +22,7 @@
 		711A4F32193458E0005642EF /* AIListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 711A4F31193458E0005642EF /* AIListViewController.m */; };
 		711A4F3519345A94005642EF /* AIListTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 711A4F3419345A94005642EF /* AIListTableViewDataSource.m */; };
 		711A4F3B19345E88005642EF /* AIListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 711A4F3A19345E88005642EF /* AIListTableViewCell.m */; };
+		711A4F40193555A1005642EF /* AIDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 711A4F3F193555A1005642EF /* AIDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		711A4F3419345A94005642EF /* AIListTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIListTableViewDataSource.m; sourceTree = "<group>"; };
 		711A4F3919345E88005642EF /* AIListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIListTableViewCell.h; sourceTree = "<group>"; };
 		711A4F3A19345E88005642EF /* AIListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIListTableViewCell.m; sourceTree = "<group>"; };
+		711A4F3E193555A1005642EF /* AIDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIDetailViewController.h; sourceTree = "<group>"; };
+		711A4F3F193555A1005642EF /* AIDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				711A4F31193458E0005642EF /* AIListViewController.m */,
 				711A4F3919345E88005642EF /* AIListTableViewCell.h */,
 				711A4F3A19345E88005642EF /* AIListTableViewCell.m */,
+				711A4F3E193555A1005642EF /* AIDetailViewController.h */,
+				711A4F3F193555A1005642EF /* AIDetailViewController.m */,
 				711A4F13193458CB005642EF /* Images.xcassets */,
 				711A4F08193458CB005642EF /* Supporting Files */,
 			);
@@ -256,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				711A4F12193458CB005642EF /* AIAppDelegate.m in Sources */,
+				711A4F40193555A1005642EF /* AIDetailViewController.m in Sources */,
 				711A4F3519345A94005642EF /* AIListTableViewDataSource.m in Sources */,
 				711A4F32193458E0005642EF /* AIListViewController.m in Sources */,
 				711A4F3B19345E88005642EF /* AIListTableViewCell.m in Sources */,

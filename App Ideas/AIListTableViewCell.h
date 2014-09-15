@@ -12,6 +12,6 @@
 
 @property (nonatomic, strong, readonly) UITextField *titleField;
 
-- (void)updateWithIdea:(NSString *)idea;
+- (void)updateWithIdea:(NSDictionary *)idea;
 
 @end

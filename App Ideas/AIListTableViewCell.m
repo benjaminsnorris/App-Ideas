@@ -10,6 +10,8 @@
 
 static CGFloat margin = 15;
 
+static NSString * const titleKey = @"title";
+
 @interface AIListTableViewCell ()
 
 @property (nonatomic, strong) UITextField *titleField;
@@ -33,8 +35,8 @@ static CGFloat margin = 15;
     return self;
 }
 
-- (void)updateWithIdea:(NSString *)idea {
-    self.titleField.text = idea;
+- (void)updateWithIdea:(NSDictionary *)idea {
+    self.titleField.text = idea[titleKey];
 }
 
 @end
