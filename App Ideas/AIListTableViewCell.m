@@ -10,6 +10,8 @@
 
 static CGFloat margin = 15;
 
+static NSString * const titleKey = @"title";
+
 @interface AIListTableViewCell ()
 
 @property (nonatomic, strong) UITextField *titleField;
@@ -22,7 +24,7 @@ static CGFloat margin = 15;
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         
-        UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(margin, 0, self.contentView.bounds.size.width - (3 * margin), self.contentView.bounds.size.height)];
+        UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(margin, 0, self.contentView.bounds.size.width - (3 * margin) - 100, self.contentView.bounds.size.height)];
         textField.placeholder = @"Idea Name";
         self.titleField = textField;
         [self.contentView addSubview:textField];
@@ -33,8 +35,8 @@ static CGFloat margin = 15;
     return self;
 }
 
-- (void)updateWithIdea:(NSString *)idea {
-    self.titleField.text = idea;
+- (void)updateWithIdea:(NSDictionary *)idea {
+    self.titleField.text = idea[titleKey];
 }
 
 @end
